@@ -6,6 +6,15 @@
 * [ENHANCEMENT] Ruler: added the following metrics when ruler sharding is enabled: #3916
   * `cortex_ruler_clients`
   * `cortex_ruler_client_request_duration_seconds`
+* [ENHANCEMENT] Blocks storage: added Redis support as Cache backend. #3573
+  - The following configure have been added.
+    - `-<prefix>.redis.key-prefix`
+    - `-blocks-storage.bucket-store.index-cache.backend`
+    - `-blocks-storage.bucket-store.index-cache.redis.*`
+    - `-blocks-storage.bucket-store.metadata-cache.backend`
+    - `-blocks-storage.bucket-store.metadata-cache.redis.*`
+    - `-blocks-storage.bucket-store.chunks-cache.backend.backend`
+    - `-blocks-storage.bucket-store.chunks-cache.backend.redis.*`
 
 ## 1.8.0 in progress
 
